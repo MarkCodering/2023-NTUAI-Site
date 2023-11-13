@@ -10,8 +10,10 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
 	return (
+		// @ts-ignore
 		<NextUIProvider navigate={router.push}>
 			<NextThemesProvider>
+				{/* @ts-ignore */}
 				<Component {...pageProps} />
 			</NextThemesProvider>
 		</NextUIProvider>

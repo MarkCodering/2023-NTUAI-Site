@@ -2,10 +2,10 @@ import React from 'react'
 import { CheckIcon } from '@heroicons/react/20/solid'
 
 const includedFeatures = [
-  'Private forum access',
+  'Private Discord access',
   'Member resources',
-  'Entry to annual conference',
-  'Official member t-shirt',
+  'Entry to weekly events',
+  'Support from the community and the staff',
 ]
 
 export default function Pricing() {

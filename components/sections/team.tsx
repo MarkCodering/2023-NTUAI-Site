@@ -1,44 +1,248 @@
-const people = [
-    {
-        name: 'Seth Harding',
-        role: 'Co-Founder / President',
-        imageUrl:
-        'https://media.discordapp.net/attachments/1158337036038721566/1164791070421426226/298501843_773359537141550_3482837343107104290_n.jpg?ex=65602eb7&is=654db9b7&hm=6bf5790bdd28e0ad79561defdc3fec72f97799cceb87f5eeec5d2d1969c17553&=&width=697&height=701'
-    },
-    {
-        name: 'Herong',
-        role: 'Vice President',
-        imageUrl:
-        ''
-    },
+import React from "react";
 
-    // More people...
-]
-
-export default function TeamSection() {
-    return (
-        <div className="py-24 sm:py-32">
-            <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-                <div className="max-w-2xl">
-                    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet our leadership</h2>
-                    <p className="mt-6 text-lg leading-8 text-gray-100">
-                        A group of passionate and talented students who are dedicated to making AI more accessible to the NTU community.
-                    </p>
-                </div>
-                <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                    {people.map((person) => (
-                        <li key={person.name}>
-                            <div className="flex items-center gap-x-6">
-                                <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
-                                <div>
-                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-white">{person.name}</h3>
-                                    <p className="text-sm font-semibold leading-6 text-blue-500">{person.role}</p>
-                                </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
+const Team = () => {
+  return (
+    <section className="pb-10 pt-5 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+      <div className="container mx-auto">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[510px] text-center">
+              <span className="mb-2 block text-lg font-semibold text-primary">
+                Our Team
+              </span>
+              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                Our Staffs at NTUAI
+              </h2>
+              <p className="text-base text-body-color dark:text-dark-6">
+                NTUAI Club is a student organization that aims to make AI
+                technology accessible for all NTU students. We are a group of
+                students who are passionate about AI and want to share our
+                knowledge with others. We hope to build a community of students
+                who are interested in AI and want to learn more about it.
+              </p>
             </div>
+          </div>
         </div>
-    )
-}
+
+        <div className="-mx-4 flex flex-wrap justify-center">
+          <TeamCard
+            name="Coriss Ambady"
+            profession="Web Developer"
+            imageSrc="https://i.ibb.co/T1J9LD4/image-03-2.jpg"
+          />
+          <TeamCard
+            name="Coriss Ambady"
+            profession="Web Developer"
+            imageSrc="https://i.ibb.co/8P6cvVy/image-01-1.jpg"
+          />
+          <TeamCard
+            name="Coriss Ambady"
+            profession="Web Developer"
+            imageSrc="https://i.ibb.co/30tGtjP/image-04.jpg"
+          />
+          <TeamCard
+            name="Coriss Ambady"
+            profession="Web Developer"
+            imageSrc="https://i.ibb.co/yVVT0Dp/image-02-2.jpg"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Team;
+
+// @ts-ignore
+const TeamCard = ({ imageSrc, name, profession }) => {
+  return (
+    <>
+      <div className="w-full px-4 md:w-1/2 xl:w-1/4">
+        <div className="mx-auto mb-10 w-full max-w-[370px]">
+          <div className="relative overflow-hidden rounded-lg">
+            <img src={imageSrc} alt="" className="w-full" />
+            <div className="absolute bottom-5 left-0 w-full text-center">
+              <div className="relative mx-5 overflow-hidden rounded-lg bg-white px-3 py-5 dark:bg-dark-2">
+                <h3 className="text-base font-semibold text-black dark:text-white">
+                  {name}
+                </h3>
+                <p className="text-xs text-black dark:text-dark-6">
+                  {profession}
+                </p>
+                <div>
+                  <span className="absolute bottom-0 left-0">
+                    <svg
+                      width={61}
+                      height={30}
+                      viewBox="0 0 61 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx={16}
+                        cy={45}
+                        r={45}
+                        fill="#13C296"
+                        fillOpacity="0.11"
+                      />
+                    </svg>
+                  </span>
+                  <span className="absolute right-0 top-0">
+                    <svg
+                      width={20}
+                      height={25}
+                      viewBox="0 0 20 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="0.706257"
+                        cy="24.3533"
+                        r="0.646687"
+                        transform="rotate(-90 0.706257 24.3533)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="6.39669"
+                        cy="24.3533"
+                        r="0.646687"
+                        transform="rotate(-90 6.39669 24.3533)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="12.0881"
+                        cy="24.3533"
+                        r="0.646687"
+                        transform="rotate(-90 12.0881 24.3533)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="17.7785"
+                        cy="24.3533"
+                        r="0.646687"
+                        transform="rotate(-90 17.7785 24.3533)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="0.706257"
+                        cy="18.6624"
+                        r="0.646687"
+                        transform="rotate(-90 0.706257 18.6624)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="6.39669"
+                        cy="18.6624"
+                        r="0.646687"
+                        transform="rotate(-90 6.39669 18.6624)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="12.0881"
+                        cy="18.6624"
+                        r="0.646687"
+                        transform="rotate(-90 12.0881 18.6624)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="17.7785"
+                        cy="18.6624"
+                        r="0.646687"
+                        transform="rotate(-90 17.7785 18.6624)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="0.706257"
+                        cy="12.9717"
+                        r="0.646687"
+                        transform="rotate(-90 0.706257 12.9717)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="6.39669"
+                        cy="12.9717"
+                        r="0.646687"
+                        transform="rotate(-90 6.39669 12.9717)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="12.0881"
+                        cy="12.9717"
+                        r="0.646687"
+                        transform="rotate(-90 12.0881 12.9717)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="17.7785"
+                        cy="12.9717"
+                        r="0.646687"
+                        transform="rotate(-90 17.7785 12.9717)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="0.706257"
+                        cy="7.28077"
+                        r="0.646687"
+                        transform="rotate(-90 0.706257 7.28077)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="6.39669"
+                        cy="7.28077"
+                        r="0.646687"
+                        transform="rotate(-90 6.39669 7.28077)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="12.0881"
+                        cy="7.28077"
+                        r="0.646687"
+                        transform="rotate(-90 12.0881 7.28077)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="17.7785"
+                        cy="7.28077"
+                        r="0.646687"
+                        transform="rotate(-90 17.7785 7.28077)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="0.706257"
+                        cy="1.58989"
+                        r="0.646687"
+                        transform="rotate(-90 0.706257 1.58989)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="6.39669"
+                        cy="1.58989"
+                        r="0.646687"
+                        transform="rotate(-90 6.39669 1.58989)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="12.0881"
+                        cy="1.58989"
+                        r="0.646687"
+                        transform="rotate(-90 12.0881 1.58989)"
+                        fill="#3056D3"
+                      />
+                      <circle
+                        cx="17.7785"
+                        cy="1.58989"
+                        r="0.646687"
+                        transform="rotate(-90 17.7785 1.58989)"
+                        fill="#3056D3"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};

@@ -1,5 +1,5 @@
 {
-  "name": "next-pages-template",
+  "name": "ntuai_website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "react-dom": "18.2.0",
     "tailwind-variants": "^0.1.18",
     "tailwindcss": "3.3.5",
+    "tw-elements": "^1.0.0",
     "typescript": "5.0.4"
   }
 }

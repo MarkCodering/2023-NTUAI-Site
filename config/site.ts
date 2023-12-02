@@ -27,43 +27,32 @@ export const siteConfig = {
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "About",
+			href: "#about",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "Events",
+			href: "#events",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
+			label: "Members",
+			href: "#members",
 		},
 		{
-			label: "Team",
-			href: "/team",
+			label: "Pricing",
+			href: "#pricing",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
+			label: "Contact",
+			href: "#contact",
 		},
 	],
 	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui-docs-v2.vercel.app",
-		discord: "https://discord.gg/9b6yyZKmH4",
+		github: "https://github.com/NTUAI",
+		//twitter: "https://twitter.com/getnextui",
+		home: "#about",
+		discord: "https://discord.gg/BYPhBCVf",
 		//sponsor: "https://patreon.com/jrgarciadev"
+		instagram: "https://www.instagram.com/ntuaiclub/",
 	},
 };

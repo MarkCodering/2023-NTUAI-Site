@@ -4,7 +4,6 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
-import TeamSection from "@/components/sections/team";
 import Pricing from "@/components/sections/pricing";
 import EventTimeline from "@/components/sections/events";
 

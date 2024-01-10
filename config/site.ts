@@ -13,10 +13,6 @@ export const siteConfig = {
 			href: "#events",
 		},
 		{
-			label: "Members",
-			href: "#members",
-		},
-		{
 			label: "Pricing",
 			href: "#pricing",
 		},
@@ -33,10 +29,6 @@ export const siteConfig = {
 		{
 			label: "Events",
 			href: "#events",
-		},
-		{
-			label: "Members",
-			href: "#members",
 		},
 		{
 			label: "Pricing",

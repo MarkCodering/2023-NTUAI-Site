@@ -6,7 +6,7 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import TeamSection from "@/components/sections/team";
 import Pricing from "@/components/sections/pricing";
-import Events from "@/components/sections/events";
+import EventTimeline from "@/components/sections/events";
 
 export default function IndexPage() {
 	return (
@@ -63,17 +63,15 @@ export default function IndexPage() {
 					<img src="/hero.jpg" className="w-1/2 mx-auto rounded-xl" />
 				</div>
 
-				{/**
-				 * Create timeline component for events
+				{
+				 //* Create timeline component for events
 				 
 				<div className="mt-8 mb-8" id="events">
-					<h2 className="text-5xl pt-10 pb-10 font-bold text-center">2023 Events</h2>
-					<Events />
+					<h2 className="text-5xl pt-10 pb-10 font-bold text-center">2024 Events</h2>
+					{/* @ts-ignore */}
+					<EventTimeline />
 				</div>
-				*/}
-			</section>
-			<section className="flex flex-col items-center bg-black bg-center justify-center gap-4 py-8 md:py-10" id="members">
-				<TeamSection />
+				}
 			</section>
 			<section className="flex flex-col items-center bg-cover bg-center justify-center gap-4 py-8 md:py-10" id="pricing">
 				<Pricing />
